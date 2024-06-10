@@ -6,11 +6,12 @@
     <title>Irina Bozhinovska - Marketing Professional</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -20,8 +21,7 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 20px 0;
             border-bottom: #77A4D9 3px solid;
         }
         header a {
@@ -35,19 +35,17 @@
             list-style: none;
         }
         header li {
-            float: left;
             display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
-            float: left;
+            display: inline;
         }
         header #branding h1 {
             margin: 0;
         }
         header nav {
             float: right;
-            margin-top: 10px;
         }
         header .highlight, header .current a {
             color: #77A4D9;
@@ -55,7 +53,7 @@
         }
         #showcase {
             min-height: 400px;
-            background: url('showcase.jpg') no-repeat 0 -400px;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
             text-align: center;
             color: #fff;
         }
@@ -68,23 +66,43 @@
             font-size: 20px;
         }
         #main {
-            padding: 20px;
+            padding: 20px 0;
         }
-        #main .content {
-            float: right;
-            width: 70%;
+        #main .content, #sidebar {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         #sidebar {
             float: left;
             width: 30%;
-            margin-top: 10px;
-            padding: 10px;
-            background: #77A4D9;
-            color: #fff;
+            background: #f4f4f4;
         }
         #sidebar ul {
             padding: 0;
             list-style: none;
+        }
+        #sidebar ul li {
+            padding: 10px;
+            border-bottom: #ccc 1px solid;
+        }
+        #sidebar ul li:last-child {
+            border: none;
+        }
+        #sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+        .content {
+            float: right;
+            width: 70%;
+        }
+        .content h2, .content h3 {
+            color: #333;
+        }
+        .content p {
+            line-height: 1.6;
         }
         footer {
             padding: 20px;
@@ -92,6 +110,16 @@
             color: #fff;
             background-color: #333;
             text-align: center;
+        }
+        @media (max-width: 768px) {
+            header #branding, header nav, header nav ul, header nav ul li {
+                display: block;
+                text-align: center;
+            }
+            #sidebar, .content {
+                float: none;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -126,7 +154,7 @@
             <h3>Contact Information</h3>
             <ul>
                 <li>Phone: +34645356049</li>
-                <li>Email: irina_boz@yahoo.com</li>
+                <li>Email: <a href="mailto:irina_boz@yahoo.com">irina_boz@yahoo.com</a></li>
                 <li>Location: Barcelona, Spain</li>
                 <li><a href="https://www.linkedin.com/in/irina-bozinovska/" target="_blank">LinkedIn</a></li>
             </ul>
